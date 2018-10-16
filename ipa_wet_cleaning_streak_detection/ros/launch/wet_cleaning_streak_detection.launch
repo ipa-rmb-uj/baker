@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- send parameters to parameter server -->
+  <rosparam command="load" ns="wet_cleaning_streak_detection/wet_cleaning_streak_detection" file="$(find ipa_wet_cleaning_streak_detection)/ros/launch/wet_cleaning_streak_detection_params.yaml"/>
+
+
+  <!--  -->
+  <node pkg="ipa_wet_cleaning_streak_detection" ns="wet_cleaning_streak_detection" type="wet_cleaning_streak_detection" name="wet_cleaning_streak_detection" output="screen">	<!-- ns=namespace (arbitrary), type=name of executable, name=node name (arbitrary) -->
+	<!--launch-prefix="/usr/bin/gdb"-->
+
+	<!--remap from="image_color" to="/camera/rgb/image"/-->
+  </node>
+
+</launch>

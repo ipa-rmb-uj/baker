@@ -1,0 +1,4 @@
+# spectral residual component: number of Gaussian smoothing operations
+# int
+#spectralResidualGaussianBlurIterations: 3    #3
+
